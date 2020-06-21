@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutCocu">
+
+    <Button
+        android:id="@+id/bsm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BULAN SABIT MERAH"
+        app:layout_constraintBottom_toTopOf="@+id/rvBsm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBsm"
+        android:layout_width="315dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bsm" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="330dp"
+        android:layout_height="249dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596">
+
+        <Button
+            android:id="@+id/krs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KADET REMAJA SEKOLAH" />
+
+        <Button
+            android:id="@+id/pp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PANDU PUTERI" />
+
+        <Button
+            android:id="@+id/pengakap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PENGAKAP" />
+
+        <Button
+            android:id="@+id/pi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PUTERI ISLAM"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
